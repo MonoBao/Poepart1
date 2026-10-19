@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="QuickChat" default="default" basedir=".">
+    <import file="nbproject/build-impl.xml"/>
+    <target name="-post-jar">
+        <mkdir dir="${dist.dir}/lib"/>
+        <copy file="${file.reference.gson.jar}" todir="${dist.dir}/lib"/>
+    </target>
+</project>
